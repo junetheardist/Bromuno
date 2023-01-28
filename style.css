@@ -1,0 +1,404 @@
+body {
+    font-family: 'poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+/*------background colors to change body color based on the pages*/
+.blue-background {
+    background-color: #5312DD;
+}
+
+.red-background {
+    background-color: #F61063;
+}
+
+.green-background {
+    background-color: #00702D;
+}
+
+.black-background {
+    background-color: #222020;
+}
+
+.yellow-background {
+    background-color: #FFDF6F;
+}
+
+
+
+
+.bg-main {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* all the fonts setting go here*/
+h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 2.1rem;
+    line-height: 2rem;
+}
+
+h4 {
+    font-weight: 600;
+}
+
+p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+/*--------------animation to make something desappear----------------*/
+.dissapear {
+    transition: all;
+    transition-delay: 1s;
+    position: relative;
+    animation: 1.5s 0s slide linear ;
+    animation-fill-mode:forwards;
+}
+.reappear {
+    transition: all;
+    transition-delay: 1s;
+    position: relative;
+    animation: 1.5s 0s slide linear ;
+    animation-direction: reverse;
+    animation-fill-mode:forwards;
+}
+
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+60% {
+    opacity: 0%;
+}
+    100% {
+        left: 110%;
+        opacity: 0;
+    }
+}
+
+
+/*--------------animation to make something dissappear----------------*/
+
+/*--------------border style goes here----------------*/
+.border {
+    border: 1px solid;
+    border-color: #F61063;
+}
+
+.border-yellow {
+    border: 1px solid;
+    border-color: #FFDF6F;
+}
+
+.border-orange {
+    border: 1px solid;
+    border-color: #F69A10;
+}
+.border-grey {
+    border: 1px solid;
+    border-color: #d8d2c9;
+}
+
+.inner-border {
+    border: 1px solid;
+    border-width: 0px 0px 0px 1px;
+    border-color: inherit;
+
+
+}
+
+.main-border-lemon {
+    border-width: .4rem;
+    border-color: #8ACF71;
+}
+
+.main-border-red {
+    border-width: .4rem;
+    border-color: #fe70a479;
+}
+
+.main-border-purple {
+    border-width: .4rem;
+    border-color: #9D7CF9;
+}
+
+
+.hover-box :hover {
+    background-color: antiquewhite;
+    transform: translateX(20px);
+    transition: 2s;
+    animation-timing-function: ease-in;
+}
+
+/*---------------border style end here----------------*/
+
+
+
+
+
+/*--------------Table styles----------------*/
+.table-cell {
+    font-weight: 600;
+    font-size: 0.8rem;
+    height: 38px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 20px;
+}
+
+/*--------------Table styles----------------*/
+
+
+
+/*--------------Slider content copy color----------------*/
+.black-text {
+    color: #554E4E;
+    border-color: #554E4E;
+}
+
+.white-text {
+    color: #ffff;
+    border-color: #fff;
+}
+
+/*--------------Slider content copy color----------------*/
+
+
+.page-wrapper {
+
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+    height: 90%;
+    width: 90%;
+    min-height: 620px;
+    border-style: solid;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header {
+
+    border-style: solid;
+    border-width: 2px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    z-index: 0;
+    max-height: 50px;
+    height: 9%;
+
+}
+
+.logo-and-guest {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: auto;
+    max-width: fit-content;
+    padding: 14px 32px;
+}
+
+
+.header-mid {
+    display: flex;
+    flex-grow: 1;
+    padding: 5px 30px;
+    align-items: center;
+    overflow: hidden;
+    gap: 50px;
+
+}
+
+nav {
+    border: 0px;
+    padding: 5px 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: fit-content;
+}
+
+
+/*------nav font colors based on page------*/
+.white-fonts {
+    color: rgb(204, 204, 204);
+}
+
+.black-fonts {
+    color: #554E4E;
+}
+
+.orange-fonts {
+    color: #F69A10;
+    ;
+}
+
+.lemon-fonts {
+    color: rgb(176, 211, 141);
+}
+
+ul {
+
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 0%;
+}
+
+li {
+    color: inherit;
+}
+
+
+.join-us {
+    display: flex;
+    width: fit-content;
+    padding: 5px 20px;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+
+.preview {
+    overflow: hidden;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.preview-portfolio {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    height: 99.9%;
+    width: 100%;
+    position: relative;
+
+}
+
+.slider-indicator {
+    display: flex;
+    position: absolute;
+    bottom: 7%;
+    left: 6.5%;
+    z-index: 2;
+
+}
+
+.white-box {
+    fill: aquamarine;
+    mix-blend-mode: difference;
+}
+
+.hero-slide-1 {
+    display: flex;
+    color: white;
+    height: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+
+
+}
+
+.hero-copy {
+    max-width: 450px;
+    width: 60%;
+    margin-bottom: 5%;
+    margin-left: 7%;
+    align-self: center;
+
+}
+
+.hero-image {
+    max-height: 500px;
+    margin-right: 5%;
+}
+
+
+.footer {
+
+    height: auto;
+    min-height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+}
+
+
+.announcement {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 350px;
+    padding: 5px 25px;
+
+}
+
+
+/*---------all portfolio related styles----------*/
+
+.portfolio-line {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    height: 50%;
+
+}
+
+.p-thumbnail-frame {
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid #FFDF6F;
+    min-width: 350px;
+}
+
+.project {
+    height: 100%;
+    width: 100%;
+}
+
+.low-bg {
+    opacity: 50%;
+}
+
+
+
+
+
+/*---------all portfolio related styles----------*/
