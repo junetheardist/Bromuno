@@ -173,7 +173,9 @@ blink-caret .75s step-end infinite;*/
 @media (max-width: 600px) {
     .main-frame {
         width: 90vw;
-        max-height: 650px;
+        max-height: none;
+        position: reletive;
+        top: -10%;
 
     }
     .socials {
