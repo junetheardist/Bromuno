@@ -73,25 +73,28 @@ a {
     transition: all;
     transition-delay: 1s;
     position: relative;
-    animation: 1.5s 0s slide linear ;
-    animation-fill-mode:forwards;
+    animation: 1.5s 0s slide linear;
+    animation-fill-mode: forwards;
 }
+
 .reappear {
     transition: all;
     transition-delay: 1s;
     position: relative;
-    animation: 1.5s 0s slide linear ;
+    animation: 1.5s 0s slide linear;
     animation-direction: reverse;
-    animation-fill-mode:forwards;
+    animation-fill-mode: forwards;
 }
 
 @keyframes slide {
     0% {
         left: 0;
     }
-60% {
-    opacity: 0%;
-}
+
+    60% {
+        opacity: 0%;
+    }
+
     100% {
         left: 110%;
         opacity: 0;
@@ -116,6 +119,7 @@ a {
     border: 1px solid;
     border-color: #F69A10;
 }
+
 .border-grey {
     border: 1px solid;
     border-color: #d8d2c9;
@@ -125,6 +129,7 @@ a {
     border: 1px solid;
     border-width: 0px 0px 0px 1px;
     border-color: inherit;
+
 
 
 }
@@ -215,6 +220,8 @@ header {
 }
 
 .logo-and-guest {
+
+
     display: flex;
     align-items: center;
     gap: 15px;
@@ -266,7 +273,7 @@ ul {
 
     list-style-type: none;
     display: flex;
-    gap: 15px;
+    gap: 2rem;
     align-items: center;
     justify-content: center;
     width: fit-content;
@@ -397,6 +404,12 @@ li {
     opacity: 50%;
 }
 
+.announcement:hover>#hide {
+    background-color: #F61063;
+
+
+
+}
 
 
 

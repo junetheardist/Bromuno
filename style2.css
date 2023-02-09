@@ -1,0 +1,200 @@
+body {
+    font-family: 'poppins', sans-serif;
+
+    @font-face {
+        font-family: 'strretch', sans-serif;
+        src: url(fonts/strretch-sans.ttf) format('truetype');
+    }
+
+    height: 100vh;
+    width: 100vw;
+    color: rgb(255, 255, 255);
+    background-color: #5647FF;
+    background-image: url(pics/noise-texture.png);
+    background-repeat: repeat;
+    background-size: 19% 19%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    color: inherit;
+}
+
+.body-overlay {
+    background-color: #5647ffee;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+h4 {
+    font-family: 'Strretch sans', sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    line-height:1rem;
+    font-weight: 400;
+    text-align: justify;
+    letter-spacing: 0.18em;
+    
+}
+h5 {
+ letter-spacing: 1.4px;
+}
+.main-frame {
+    margin: auto;
+    width: 70vw;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    height: auto;
+    max-height: 600px;
+    position: relative;
+    z-index: 1;
+}
+
+.mid {
+    display: flex;
+    flex-direction: row;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+    height: autopx;
+    flex-shrink: 2;
+    max-height: 400px;
+    flex-grow: 2;
+}
+
+.content {
+    border-width: 0px 2px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    background-color: #394a769d;
+}
+
+p {
+    line-height: 1.8rem;
+}
+
+.text-area {
+    height: fit-content;
+    padding: 0px 5%;
+    overflow: auto;
+    padding-top: 3%;
+    /*animation: 
+typing 3.5s steps(40, end),
+blink-caret .75s step-end infinite;*/
+}
+
+.sides {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding: 2%;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.more {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    height: 50px;
+   
+
+}
+
+.socials {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    border-left: #fff;
+    border-width: 0 2px 0 0;
+    border-style: solid;
+    padding: 0 3%;
+    height: 100%;
+}
+
+.top-bot {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow: hidden;
+    align-items: center;
+    height: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+
+
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+   height: auto;
+   flex-grow: 1;
+ 
+   gap: 10px;
+  
+}
+
+.logo-string {
+    width: 200%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+    height: 50px;
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+    .main-frame {
+        width: 90vw;
+        max-height: 650px;
+
+    }
+    .socials {
+        justify-content: flex-start;
+        gap: 10px;
+        width: 50%;
+        overflow: auto;
+        font-size: 12px();
+    }
+}
+
+
+
+
+/* The typing effect 
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  /* The typewriter cursor effect 
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
