@@ -176,11 +176,11 @@ blink-caret .75s step-end infinite;*/
 
     }
     .socials {
-        justify-content: flex-start;
+        justify-content: space-evenly;
         gap: 10px;
         width: 50%;
         overflow: auto;
-        font-size: 12px();
+        font-size: 12px;
     }
 }
 
