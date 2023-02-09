@@ -18,6 +18,7 @@ body {
     display: flex;
     justify-content: center;
     margin: 0;
+    flex-direction: column;
 }
 
 a {
@@ -176,11 +177,16 @@ blink-caret .75s step-end infinite;*/
 
     }
     .socials {
+
         justify-content: space-evenly;
         gap: 10px;
         width: 50%;
         overflow: auto;
         font-size: 12px;
+    }
+    body {
+        justify-content: flex-start;
+      
     }
 }
 
