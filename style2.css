@@ -1,6 +1,39 @@
+* {
+border-color: var(--border-color-darkbrown);
+/* border: var(--border-color-white); */
+
+
+}
+
+
+/* Bromuno colors. I'm still learning how to use variables by the way */
+:root {
+    --border-color-white: hsl(0, 0%, 100%);
+    --border-color-darkbrown: hsl(28, 72%, 53%);
+    --border-color-lightgreen: hsl(102, 50%, 69%);
+    --background-color-primary: #FAE69E;
+    --background-color-lightyellow: #FAE69E;
+    --background-color-secondary: hsl(28, 72%, 53%);
+  
+}
+
+/* different border stylings */
+
+.border-right {
+    border-width: 0px 0px 0px 0px;
+    
+}
+.border-left {
+    border-left: 2px;
+}
+
+.border-bot {
+    border-bottom: solid 2px;
+}
+    
+
 body {
     font-family: 'poppins', sans-serif;
-
     @font-face {
         font-family: 'strretch', sans-serif;
         src: url(fonts/strretch-sans.ttf) format('truetype');
@@ -9,7 +42,7 @@ body {
     height: 100vh;
     width: 100vw;
     color: rgb(255, 255, 255);
-    background-color: #5647FF;
+    background-color: var(--background-color-lightyellow);
     background-image: url(pics/noise-texture.png);
     background-repeat: repeat;
     background-size: 19% 19%;
@@ -28,7 +61,8 @@ a {
 }
 
 .body-overlay {
-    background-color: #5647ffee;
+    background-color: var(--background-color-primary);
+    opacity: .90;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -59,6 +93,22 @@ h5 {
     max-height: 600px;
     position: relative;
     z-index: 1;
+    border-color: inherit;
+}
+
+li {
+    margin: 0px;
+}
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+/* use this to expand the mainframe with to test out the js function */
+.expand-frame {
+    width: 70%;
+    max-width: none;
+    min-height: 70%;
+   
 }
 
 .mid {
@@ -67,11 +117,80 @@ h5 {
     border-left-width: 0px;
     border-right-width: 0px;
     border-style: solid;
-    height: autopx;
+    height: auto;
     flex-shrink: 2;
     max-height: 400px;
+    min-height: 450px;
     flex-grow: 2;
+    overflow: hidden;
+    color: hsl(28, 72%, 53%);
 }
+
+/* this is the supposed popup to show roadmap */
+.roadmap {
+    border-width: 0px 2px;
+    border-style: solid;
+    border-color: inherit;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    background-color: #E7D38C;
+    overflow: auto;
+    width: 50%;
+   
+  
+    
+}
+
+.quaters-frame {
+    /* position: absolute; */
+    display: flex;
+    height: auto;
+    width: 100%;
+    min-height: 450px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.quater {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 30%;
+    min-width: 250px;
+    border: solid;
+    border-width: 0px 1.5px 0px 0px;
+    margin: 0%;
+    padding: 0px;
+    border-style: solid;
+    border-color: var(--border-color-darkbrown);
+    overflow: hidden;
+   }
+
+.quater-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: #DFCF97;
+    border-style: solid;
+    border-width: 0px 0px 1.5px 0px;
+}
+
+.quater-objective {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    border-style: solid;
+    border-bottom-width: 1.5px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    color: #554E4E;
+    gap: 15px;
+    padding: 0px 10px;
+    }
 
 .content {
     border-width: 0px 2px;
@@ -117,7 +236,10 @@ blink-caret .75s step-end infinite;*/
     border-style: solid;
     height: 50px;
    
+}
 
+.hide-more{
+    display: none;
 }
 
 .socials {
@@ -151,12 +273,14 @@ blink-caret .75s step-end infinite;*/
     align-items: center;
     width: fit-content;
    height: auto;
+   min-height: 50px;
    flex-grow: 1;
+   
  
    gap: 10px;
   
 }
-
+/* the header and footer-ish looking things */
 .logo-string {
     width: 200%;
     display: flex;
@@ -164,6 +288,13 @@ blink-caret .75s step-end infinite;*/
     justify-content: space-between;
     gap: 5%;
     height: 50px;
+    
+}
+
+.logo-string  h4, [fill],[stroke] {
+    fill: var( --border-color-darkbrown);
+    /* stroke: var( --border-color-darkbrown); */
+    color: var( --border-color-darkbrown);
 }
 
 .logo {
@@ -175,7 +306,7 @@ blink-caret .75s step-end infinite;*/
         width: 90vw;
         max-height: none;
         position: reletive;
-        top: -10%;
+        top: -5%;
 
     }
     .socials {
